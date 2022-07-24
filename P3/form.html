@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>P3 Form Validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Silahkan isi form</h1>
+        <form name="formPendaftaran" action="../index.html" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" name="nama" placeholder="Nama lengkap" class="form-control" required maxlength="40" minlength="3">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email Aktif" class="form-control">
+                <small id="emailHelp" class="form-text text-muted">Email Digunakan Untuk Verifikasi.</small>
+            </div>
+            <div class="form-group">
+                <label>Program Studi</label>
+                <select name="Program Studi" class="form-control">
+                        <option value="0">Program Studi</option>
+                        <option value="1">Teknik Informatika</option>
+                        <option value="2">Sistem Informasi</option>
+                        <option value="3">Data Analisis</option>
+                        <option value="3">Farmasi</option>
+                    </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <a class="btn btn-primary" href="../index.html" role="button">Back</a>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            if (document.forms["formPendaftaran"]["nama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["nama"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["email"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["email"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["Program Studi"].selectedIndex < 1) {
+                alert("Pilih Program Studi.");
+                document.forms["formPendaftaran"]["Program Studi"].focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

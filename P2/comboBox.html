@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+<style type="text/css">
+    .dropdown:hover > .dropdown-menu, .dropright:hover > .dropdown-menu {
+        display: block;
+    }
+
+</style>
+<html>
+  <title>Combo Box</title>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    </head>
+    <body>
+        
+        
+        <header>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../STIKER.jpg" width="30" height="30" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pertemuan 
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="P1/algoritma.php">Pertemuan 1</a>
+                     
+                        <!-- Default dropright button -->
+                        <div class="dropdown-item dropright">
+                            <!-- <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropright
+                            </button> -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pertemuan 2
+                              </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="btn_choice.html">Button Choice</a>
+                                <a class="dropdown-item" href="checkBox.html">CceckBox</a>
+                                <a class="dropdown-item" href="comboBox.html">Combo Box</a>
+                                <a class="dropdown-item" href="layout.html">Layout</a>
+                             
+                                <a class="dropdown-item" href="navbar.html">NavBar</a>
+                                <a class="dropdown-item" href="radiobtn.html">Radio Button</a>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="P3/form.html">Pertemuan 3</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Kontak
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://wa.me/6285890216240">Whatsapp</a>
+                            <a class="dropdown-item" href="https://facebook.com/muhamadakbarsans">Facebook</a>
+                            <a class="dropdown-item" href="https://instagram.com/afmtsans">Instagram</a>
+                            <a class="dropdown-item" href="https://t.me/afmtsans">Telegram</a>
+                          <!-- <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Merk HP yg kamu inginkan</h3>
+                            <form >
+                                <select>
+                                    <option value="Samsung">Samsung Galaxy</option>
+                                    <option value="iPhone">iPhone</option>
+                                    <option value="Oppo">Oppo</option>
+                                    <option value="Realme">Realme</option>
+                                    <option value="Xiaomi">Xiaomi</option>
+                                    <option value="Sony">Sony Xperia</option>
+                                </select>
+                                <br><br><input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+</html>
